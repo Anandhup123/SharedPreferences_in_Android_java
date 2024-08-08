@@ -16,13 +16,10 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-
         paste=(TextView) findViewById(R.id.pastehere);
-
 
         SharedPreferences sp=getSharedPreferences("user", Context.MODE_PRIVATE);
         String data=sp.getString("value","");
-
         paste.setText(data);
 
     }
